@@ -1,0 +1,221 @@
+---
+title: "Welcome to KejaConnect"
+format: html
+---
+
+:::{.columns}
+
+::: {.column width="35%"}
+
+### *Find Your Space. Settle with Ease*
+
+Welcome to **KejaConnect** — your all-in-one platform for discovering real estate opportunities and trusted local service providers near you. Whether you're buying land, renting a home, or managing a property, our interactive maps and smart tables help you find what you need — from available plots to nearby plumbers, electricians, and more.
+
+With KejaConnect, you're not just moving in — you're plugging in.
+
+:::
+
+::: {.column width="65%"}
+
+```{r echo=FALSE}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+library(leaflet)
+library(leaflet.extras)
+library(dplyr)
+library(sf)
+library(scales)
+
+# Define possible statuses
+statuses <- c("For Sale", "For Rent", "For Lease")
+
+parcels <- st_read("parcels.shp", quiet = TRUE) %>% 
+  st_make_valid() %>% 
+  st_transform(crs = 4326)
+# Add and populate columns
+set.seed(123)  # For reproducibility
+parcels <- parcels %>%
+  mutate(
+    status = sample(statuses, size = n(), replace = TRUE),
+    price = case_when(
+      status == "For Sale"  ~ sample(seq(1e6, 50e6, by = 1e6), size = n(), replace = TRUE),
+      status == "For Rent"  ~ sample(seq(10000, 150000, by = 5000), size = n(), replace = TRUE),
+      status == "For Lease" ~ sample(seq(50000, 5e6, by = 50000), size = n(), replace = TRUE)
+    )
+  )
+
+
+
+kejaz <- st_read("D:\\Rstuff\\Distill\\whuo\\whuo\\kejaz.shp", quiet = TRUE)
+set.seed(123)  # For reproducibility
+
+# Define the real typologies to sample from
+real_typologies <- c("Bungalow", "Studio", "Flat", "Duplex", "Townhouse", "Cottage", "Penthouse", "Villa")
+
+# Identify rows with bedroom-based labels
+bedroom_rows <- kejaz$HsTyplg %in% c("1 Bedroom", "2 Bedroom", "3 Bedroom")
+
+# Randomly assign new typologies to those rows
+kejaz$HsTyplg[bedroom_rows] <- sample(real_typologies, sum(bedroom_rows), replace = TRUE)
+
+
+image_urls <- c(
+  "https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg",  # Maisonette
+  "https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp",  # Apartment
+  "https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg",  # Bedsitter
+  "https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg",  # Mansion
+  "https://i0.wp.com/www.kenyaconstructionworks.co.ke/wp-content/uploads/2023/09/home-house-construction.jpg?resize=640%2C480&ssl=1",  # Bungalow
+  "https://cf.bstatic.com/xdata/images/hotel/max1024x768/490723700.jpg?k=2d2b6d85bf110f67e8581af50156556d71c6e0df47e9f4f0394bcc30da6405e4&o=&hp=1",  # Studio
+  "https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg",  # Flat
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lJQcWb0ZQ1VHdd4RYNIUUHUBnVRPEVuHCw&s",  # Duplex
+  "https://propscout.co.ke/storage/properties/files/1233/thumbnails/uwjuj-4-bedroom-townhouse-for-sale-in-westlands.jpg",  # Townhouse
+  "https://a0.muscache.com/im/pictures/miso/Hosting-46759784/original/cd161fea-6798-4489-9ca8-c5a3b9b6b958.jpeg",  # Cottage
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjkxe5G5wd6p4oOmdvHg-g9C7SjxR5CyBTJA&s",  # Villa
+  "https://88nairobi.com/wp-content/uploads/2023/03/88-Nairobi-Lordship-PenthouseArtboard-3-1024x577.jpg"  # Penthouse
+)
+
+house_types <- c(
+  "Maisonette", "Apartment", "Bedsitter", "Mansion",
+  "Bungalow", "Studio", "Flat", "Duplex",
+  "Townhouse", "Cottage", "Villa", "Penthouse"
+)
+
+# Named vector for image mapping
+url_map <- setNames(image_urls, house_types)
+
+# Assign image URL to each row
+kejaz <- kejaz %>%
+  mutate(Image_URL = url_map[HsTyplg])
+
+typology_icons <- c(
+  "Maisonette" = "home",
+  "Apartment"  = "building",
+  "Bedsitter"  = "bed",
+  "Mansion"    = "home",
+  "Bungalow"   = "home",
+  "Studio"     = "cube",
+  "Flat"       = "building",
+  "Duplex"     = "columns",
+  "Townhouse"  = "warehouse",
+  "Cottage"    = "tree",
+  "Villa"      = "spa",
+  "Penthouse"  = "star"
+)
+
+typology_colors <- c(
+  "Maisonette" = "red",
+  "Apartment"  = "blue",
+  "Bedsitter"  = "lightred",
+  "Mansion"    = "darkred",
+  "Bungalow"   = "orange",
+  "Studio"     = "purple",
+  "Flat"       = "cadetblue",
+  "Duplex"     = "darkblue",
+  "Townhouse"  = "green",
+  "Cottage"    = "beige",
+  "Villa"      = "darkgreen",
+  "Penthouse"  = "black"
+)
+
+# Add icon and color columns
+kejaz$icon_name <- typology_icons[kejaz$HsTyplg]
+kejaz$marker_color <- typology_colors[kejaz$HsTyplg]
+
+icons <- awesomeIcons(
+  icon = kejaz$icon_name,
+  library = "ion",
+  markerColor = kejaz$marker_color,
+  iconColor = "white"
+)
+
+
+# Define colors for parcel statuses
+status_colors <- c("For Sale" = "green", "For Rent" = "blue", "For Lease" = "orange")
+pal_status <- colorFactor(status_colors, parcels$status)
+
+# Define colors for house typology
+typology_palette <- colorFactor("Set2", kejaz$HsTyplg)
+
+leaflet() %>%
+  # Add base layers
+  addProviderTiles(providers$CartoDB.Positron, group = "CartoDB") %>%
+  addProviderTiles(providers$Esri.WorldImagery, group = "Satellite") %>%
+  addProviderTiles(providers$OpenStreetMap, group = "OSM") %>%
+  
+  # Add polygons with color by status
+  addPolygons(
+    data = parcels,
+    fillColor = ~pal_status(status),
+    color = "black",
+    weight = 15,
+    fillOpacity = 0.6,
+    label = ~paste("Status:", status, "<br>Price:", format(price, big.mark = ",")),
+    group = "Parcels by Status"
+  ) %>%
+  
+  addAwesomeMarkers(
+    data = kejaz,
+    icon = icons,
+    label = paste0(kejaz$HsTyplg, " in ", kejaz$Nghbrhd),
+    popup = ~paste0(
+                      "<b>House Typology:</b> ", kejaz$HsTyplg,
+                      "<br><b>House Availabe For:</b> ", kejaz$For,
+                      "<br><b>No. of Bedrooms:</b> ", kejaz$N_ofBdr,
+                      "<br><b>Rent or Price:</b> ", paste0("Kshs ", comma(as.numeric(kejaz$Prc.Rnt)), "/-"),
+                      "<br><b>Available Amenities:</b> ", kejaz$AdddAmn,
+                      "<br><img src='", Image_URL, "' width='200' style='margin-top:5px;'>",
+                      "<br><a href='_site/posts/anada/index.html'>View More Details</a>"
+                    ),
+    group = "Houses by Typology"
+  ) %>% 
+  # Add markers with color by house typology
+  # addCircleMarkers(
+  #   data = kejaz,
+  #   color = ~typology_palette(kejaz$HsTyplg),
+  #   radius = 6,
+  #   stroke = FALSE,
+  #   fillOpacity = 0.8,
+  #   label = ~paste("Typology:", kejaz$HsTyplg),
+  #    popup = ~paste0(
+  #                     "<b>House Typology:</b> ", kejaz$HsTyplg, 
+  #                     "<br><b>House Availabe For:</b> ", kejaz$For,
+  #                     "<br><b>No. of Bedrooms:</b> ", kejaz$N_ofBdr,
+  #                     "<br><b>Rent or Price:</b> ", paste0("Kshs ", comma(as.numeric(kejaz$Prc.Rnt)), "/-"),
+  #                     "<br><b>Available Amenities:</b> ", kejaz$AdddAmn,
+  #                     "<br><img src='", Image_URL, "' width='200' style='margin-top:5px;'>",
+  #                     "<br><a href='_site/posts/anada/index.html'>View More Details</a>"
+  #                   ),
+  #   group = "Houses by Typology"
+  # ) %>%
+  
+  # Add layer control
+  addLayersControl(
+    baseGroups = c("CartoDB", "Satellite", "OSM"),
+    overlayGroups = c("Parcels by Status", "Houses by Typology"),
+    options = layersControlOptions(collapsed = FALSE)
+  ) %>%
+  
+  # Add legends
+  addLegend(
+    position = "bottomleft",
+    pal = pal_status,
+    values = parcels$status,
+    title = "Parcel Status"
+  ) %>%
+  addLegend(
+    position = "bottomright",
+    pal = typology_palette,
+    values = kejaz$HsTyplg,
+    title = "House Typology"
+  ) %>%
+  
+  # Fullscreen button
+  addFullscreenControl()
+
+  
+```
+
+:::

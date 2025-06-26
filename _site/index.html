@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Welcome to KejaConnect – KejaConnect</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-binding-2.2.2.9000/leaflet.js"></script>
+
+<script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+
+<script src="site_libs/leaflet-providers-plugin-2.2.2.9000/leaflet-providers-plugin.js"></script>
+
+<link href="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-awesomemarkers-2.0.3/leaflet.awesome-markers.min.js"></script>
+
+<link href="site_libs/ionicons-2.0.1/ionicons.min.css" rel="stylesheet">
+
+<link href="site_libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.css" rel="stylesheet">
+
+<script src="site_libs/lfx-fullscreen-1.0.2/lfx-fullscreen-prod.js"></script>
+
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">KejaConnect</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./props.html"> 
+<span class="menu-text">Properties</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Houses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./parcs.html"> 
+<span class="menu-text">Land</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Welcome to KejaConnect</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="columns">
+<div class="column" style="width:35%;">
+<section id="find-your-space.-settle-with-ease" class="level3">
+<h3 class="anchored" data-anchor-id="find-your-space.-settle-with-ease"><em>Find Your Space. Settle with Ease</em></h3>
+<p>Welcome to <strong>KejaConnect</strong> — your all-in-one platform for discovering real estate opportunities and trusted local service providers near you. Whether you’re buying land, renting a home, or managing a property, our interactive maps and smart tables help you find what you need — from available plots to nearby plumbers, electricians, and more.</p>
+<p>With KejaConnect, you’re not just moving in — you’re plugging in.</p>
+</section>
+</div><div class="column" style="width:65%;">
+<div class="cell">
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-6c0688a849169abb3486" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-6c0688a849169abb3486">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}},"fullscreenControl":{"position":"topleft","pseudoFullscreen":false}},"calls":[{"method":"addProviderTiles","args":["CartoDB.Positron",null,"CartoDB",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Satellite",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addProviderTiles","args":["OpenStreetMap",null,"OSM",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addPolygons","args":[[[[{"lng":[37.02293274274042,37.02280469571589,37.02310046281249,37.02322889431571,37.02293274274042],"lat":[-1.268368041731223,-1.268128941789539,-1.267968232359445,-1.268205073957446,-1.268368041731223]}]],[[{"lng":[36.78000153469442,36.77956574040925,36.77971756078456,36.78020345891393,36.78006602164304,36.78000153469442],"lat":[-1.238749607024477,-1.238616609823584,-1.238088476973259,-1.238233140449811,-1.238715769706889,-1.238749607024477]}]],[[{"lng":[36.73972174561252,36.73971814595084,36.73974258474814,36.73972990510648,36.73952694803049,36.73951529957129,36.73972174561252],"lat":[-1.285575948413589,-1.285615411052826,-1.285625871541223,-1.285991057646805,-1.285842811075608,-1.285575116222518,-1.285575948413589]}]],[[{"lng":[36.78027234422414,36.78015212503556,36.78006556989222,36.77967306913714,36.77983118410539,36.78027234422414],"lat":[-1.24057172610549,-1.240780397301267,-1.240930638695495,-1.240821069576117,-1.24043839930173,-1.24057172610549]}]],[[{"lng":[36.91666385875341,36.91629089177895,36.9166021876424,36.91691106642794,36.91666385875341],"lat":[-1.169862768638198,-1.169560947566441,-1.169301389578006,-1.169551955720187,-1.169862768638198]}]],[[{"lng":[36.91127898587496,36.9112403781365,36.91111518186842,36.91115516312517,36.91127898587496],"lat":[-1.269391531251468,-1.269440760055538,-1.269341488683569,-1.269291099202662,-1.269391531251468]}]],[[{"lng":[36.81035373268646,36.81035308866048,36.81034109479924,36.81010007773799,36.81009782107809,36.81012270618151,36.81012385712665,36.81035373268646],"lat":[-1.2273612680328,-1.227382244470115,-1.227772862920507,-1.22781652385797,-1.227816932441268,-1.22737891202454,-1.227358643889459,-1.2273612680328]}]],[[{"lng":[36.90477773710364,36.90451463386839,36.90449451607728,36.90475702370688,36.90477773710364],"lat":[-1.286817041788311,-1.286916775390233,-1.286862334445535,-1.286761529869,-1.286817041788311]}]],[[{"lng":[36.85134815027336,36.85129505936796,36.85142815995074,36.85148113322007,36.85134815027336],"lat":[-1.277740550352278,-1.277478033799283,-1.277449027919287,-1.277711528118932,-1.277740550352278]}]],[[{"lng":[36.79342585468862,36.7932446589196,36.79323808059031,36.79327024547572,36.79330203589883,36.79335892909994,36.79342585468862],"lat":[-1.320350656309516,-1.320491954984306,-1.320348977836808,-1.320284086622138,-1.320258785306679,-1.320265475501938,-1.320350656309516]}]],[[{"lng":[36.89188381748458,36.89181107776277,36.89190286515851,36.89196371055005,36.89188381748458],"lat":[-1.290853857840164,-1.290545084848438,-1.290521954720079,-1.290792684563091,-1.290853857840164]}]],[[{"lng":[36.93365301523319,36.93373869123987,36.93386256944547,36.93377774967131,36.93365301523319],"lat":[-1.229558524286384,-1.229368714454167,-1.229424674790828,-1.229615436456641,-1.229558524286384]}]],[[{"lng":[36.87134784589926,36.87116713532012,36.87116724294641,36.87134854748435,36.87134784589926],"lat":[-1.248361323582565,-1.24835670280696,-1.24829215655286,-1.248295398149652,-1.248361323582565]}]],[[{"lng":[36.86490548010218,36.86454546999343,36.86500297613225,36.86536000917354,36.86490548010218],"lat":[-1.317865981267954,-1.317682239685551,-1.317000059962773,-1.317188351829625,-1.317865981267954]}]],[[{"lng":[36.90712291943429,36.90701153469606,36.90705879655426,36.90716972527211,36.90712291943429],"lat":[-1.311347122279227,-1.311159304357078,-1.311130938504398,-1.311318383546988,-1.311347122279227]}]],[[{"lng":[36.88471073701369,36.88455569968532,36.88467085185797,36.88483041321376,36.88471073701369],"lat":[-1.32134605658527,-1.321050361330772,-1.320989245686361,-1.321282611328282,-1.32134605658527]}]],[[{"lng":[36.88011599878403,36.8805946034044,36.88062539249243,36.88053081362448,36.88021514495695,36.88011599878403],"lat":[-1.28582739111136,-1.285632990158139,-1.285772835629421,-1.285954327848289,-1.286077458789375,-1.28582739111136]}]],[[{"lng":[36.79919508331134,36.79909613416761,36.79902570067404,36.79912491210029,36.79919508331134],"lat":[-1.308596729507846,-1.308735592707493,-1.308684829246898,-1.308545961764629,-1.308596729507846]}]],[[{"lng":[36.86836869915376,36.86823929004586,36.86831979905307,36.86841096974781,36.86841171921387,36.86836869915376],"lat":[-1.248779299926203,-1.248654740752284,-1.248570447870011,-1.24865865190113,-1.24873405423596,-1.248779299926203]}]],[[{"lng":[37.0402545189011,37.04052529935772,37.04066634435004,37.0403954080103,37.0402545189011],"lat":[-1.253185190423402,-1.252991155208734,-1.25319562937701,-1.253393840043769,-1.253185190423402]}]],[[{"lng":[36.90608549073858,36.90603953148339,36.90592927271047,36.90596296644083,36.90597234437971,36.90608549073858],"lat":[-1.309438836937319,-1.309467225599704,-1.30928545196959,-1.309263642211612,-1.309248921094253,-1.309438836937319]}]],[[{"lng":[36.88884422535672,36.88868494325057,36.88864221946922,36.88876552497744,36.88882403582741,36.88884422535672],"lat":[-1.316390203460133,-1.316490210407761,-1.316421765491777,-1.316342874986619,-1.316357475588269,-1.316390203460133]}]],[[{"lng":[36.75675685909439,36.75667581328392,36.75678895943619,36.75682278798346,36.75688439473634,36.75686792060837,36.75675685909439],"lat":[-1.298886005382428,-1.298668347545988,-1.298626288332897,-1.298641435739637,-1.298808171223611,-1.298844862811401,-1.298886005382428]}]],[[{"lng":[36.7401305983155,36.7396857970559,36.73971126066495,36.7401525821819,36.7401305983155],"lat":[-1.305611120863479,-1.30562541039248,-1.305421846613449,-1.30540663267291,-1.305611120863479]}]],[[{"lng":[36.89792010035791,36.89790364709333,36.89792013428966,36.89792010035791],"lat":[-1.2875166153182,-1.287494875789906,-1.287481783432178,-1.2875166153182]}]],[[{"lng":[36.77711054654713,36.77671183971827,36.7767106190275,36.77669738137305,36.77709649681197,36.77711054654713],"lat":[-1.260765177722769,-1.260773859104278,-1.260773886080061,-1.260140661090341,-1.260111824268529,-1.260765177722769]}]],[[{"lng":[36.78387181700918,36.78376759611199,36.78361882620881,36.7837244397172,36.78387181700918],"lat":[-1.328192764489053,-1.328267431377834,-1.328050828699666,-1.327977765035768,-1.328192764489053]}]],[[{"lng":[36.91532794177462,36.91532425308822,36.91551591149991,36.91552624000749,36.91533458158963,36.91532794177462],"lat":[-1.254984275047339,-1.254961979083067,-1.254931326617588,-1.254993755686329,-1.255024407240971,-1.254984275047339]}]],[[{"lng":[36.86465647930489,36.86464720787637,36.86475875091403,36.86476916655432,36.86465647930489],"lat":[-1.210391401873336,-1.210152279372703,-1.210149173610583,-1.210388506785454,-1.210391401873336]}]],[[{"lng":[36.98318974928827,36.98254829257775,36.98289295087782,36.98354073240277,36.98318974928827],"lat":[-1.246125145726393,-1.245833666230642,-1.244959027387013,-1.245226238210231,-1.246125145726393]}]],[[{"lng":[36.96273558330259,36.96263801266987,36.96257759563357,36.96267516625367,36.96273558330259],"lat":[-1.271940313265422,-1.271977139574938,-1.271814940092458,-1.271778113776703,-1.271940313265422]}]],[[{"lng":[36.82404554235687,36.82382347194592,36.82383348866498,36.82405555907306,36.82404554235687],"lat":[-1.326157014691939,-1.326123411834038,-1.326056360380162,-1.326089963227464,-1.326157014691939]}]],[[{"lng":[36.9080811187849,36.90800582694483,36.90786645377451,36.90794343927256,36.9080811187849],"lat":[-1.197674931706372,-1.19781225772441,-1.197738622073971,-1.197599541567319,-1.197674931706372]}]],[[{"lng":[36.90473681673598,36.90447439649693,36.90445368355192,36.90471608988982,36.90473681673598],"lat":[-1.286707378163862,-1.286807883555282,-1.286751830982072,-1.286651833687714,-1.286707378163862]}]],[[{"lng":[36.98111156078789,36.98099742423113,36.98125627894098,36.98135108705888,36.98131972313773,36.98111156078789],"lat":[-1.282044616490163,-1.281737543011124,-1.281638024791769,-1.281888759084679,-1.281964786886074,-1.282044616490163]}]],[[{"lng":[36.82433463909775,36.82411261726962,36.82412263388955,36.82434465571481,36.82434465480945,36.82433463909775],"lat":[-1.324221466381628,-1.32418787110511,-1.324120819623207,-1.324154414889129,-1.324154423024968,-1.324221466381628]}]],[[{"lng":[36.95593491183185,36.95577485111129,36.95575355556588,36.95593069082578,36.95593491183185],"lat":[-1.266719050955022,-1.266777843538965,-1.26664267099161,-1.266578999609776,-1.266719050955022]}]],[[{"lng":[36.88713021755366,36.88703523302979,36.88701875948883,36.88710862986321,36.88713021755366],"lat":[-1.291061960702992,-1.291061573835602,-1.290997236378534,-1.290975023493409,-1.291061960702992]}]],[[{"lng":[36.88762813131871,36.88756996594597,36.88761515736969,36.887673617563,36.88762813131871],"lat":[-1.26503681331596,-1.264921436649923,-1.264898171191312,-1.265013324785649,-1.26503681331596]}]],[[{"lng":[36.93077205896216,36.93072805187333,36.92998019181998,36.93002258938488,36.93077205896216],"lat":[-1.173573773081726,-1.173787322095456,-1.173629602003619,-1.173418268835218,-1.173573773081726]}]],[[{"lng":[36.8010306296608,36.80116588626647,36.80120453364676,36.80106858957847,36.8010306296608],"lat":[-1.313111673759003,-1.312967834273487,-1.313005338932316,-1.313148493440554,-1.313111673759003]}]]],null,"Parcels by Status",{"interactive":true,"className":"","stroke":true,"color":"black","weight":15,"opacity":0.5,"fill":true,"fillColor":["#00FF00","#00FF00","#00FF00","#0000FF","#00FF00","#0000FF","#0000FF","#0000FF","#00FF00","#FFA500","#0000FF","#0000FF","#FFA500","#0000FF","#00FF00","#FFA500","#00FF00","#00FF00","#FFA500","#FFA500","#FFA500","#FFA500","#00FF00","#0000FF","#00FF00","#0000FF","#FFA500","#0000FF","#00FF00","#0000FF","#FFA500","#00FF00","#00FF00","#FFA500","#00FF00","#0000FF","#FFA500","#00FF00","#FFA500","#FFA500","#0000FF"],"fillOpacity":0.6,"smoothFactor":1,"noClip":false},null,null,["Status: For Lease &lt;br&gt;Price:  1,750,000","Status: For Lease &lt;br&gt;Price:  4,700,000","Status: For Lease &lt;br&gt;Price:  3,950,000","Status: For Rent &lt;br&gt;Price:    105,000","Status: For Lease &lt;br&gt;Price:  4,350,000","Status: For Rent &lt;br&gt;Price:    130,000","Status: For Rent &lt;br&gt;Price:     75,000","Status: For Rent &lt;br&gt;Price:    130,000","Status: For Lease &lt;br&gt;Price:  1,150,000","Status: For Sale &lt;br&gt;Price:  5,000,000","Status: For Rent &lt;br&gt;Price:     45,000","Status: For Rent &lt;br&gt;Price:     85,000","Status: For Sale &lt;br&gt;Price: 13,000,000","Status: For Rent &lt;br&gt;Price:    130,000","Status: For Lease &lt;br&gt;Price:    250,000","Status: For Sale &lt;br&gt;Price: 27,000,000","Status: For Lease &lt;br&gt;Price:    800,000","Status: For Lease &lt;br&gt;Price:  1,200,000","Status: For Sale &lt;br&gt;Price: 21,000,000","Status: For Sale &lt;br&gt;Price: 15,000,000","Status: For Sale &lt;br&gt;Price: 41,000,000","Status: For Sale &lt;br&gt;Price: 47,000,000","Status: For Lease &lt;br&gt;Price:  1,800,000","Status: For Rent &lt;br&gt;Price:     80,000","Status: For Lease &lt;br&gt;Price:  4,450,000","Status: For Rent &lt;br&gt;Price:     30,000","Status: For Sale &lt;br&gt;Price:  6,000,000","Status: For Rent &lt;br&gt;Price:    100,000","Status: For Lease &lt;br&gt;Price:    450,000","Status: For Rent &lt;br&gt;Price:     95,000","Status: For Sale &lt;br&gt;Price: 22,000,000","Status: For Lease &lt;br&gt;Price:  2,400,000","Status: For Lease &lt;br&gt;Price:  3,850,000","Status: For Sale &lt;br&gt;Price: 48,000,000","Status: For Lease &lt;br&gt;Price:  2,800,000","Status: For Rent &lt;br&gt;Price:     65,000","Status: For Sale &lt;br&gt;Price: 49,000,000","Status: For Lease &lt;br&gt;Price:     50,000","Status: For Sale &lt;br&gt;Price:  4,000,000","Status: For Sale &lt;br&gt;Price: 13,000,000","Status: For Rent &lt;br&gt;Price:    115,000"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addAwesomeMarkers","args":[[-1.300489559691755,-1.306866637574949,-1.311665583112586,-1.327942226272899,-1.295870106060911,-1.185955848082635,-1.191378137239015,-1.265688179149757,-1.312655280599178,-1.31558184793893,-1.228038565562065,-1.27216099258516,-1.266448165643062,-1.225395696421905,-1.197604834703728,-1.195668980715677,-1.171947807684039,-1.184706761647975,-1.265837498917577,-1.208938572396416,-1.307008347218255,-1.294265823499957,-1.301902119663443,-1.260798110298066,-1.199400597376324,-1.250688026411211,-1.245689625441092,-1.183791160801746,-1.188301241752308,-1.226622653421403,-1.288613312960654,-1.213474254271988,-1.278369890080739,-1.322507137076451,-1.24170184438544,-1.266224627185024,-1.242490453071968,-1.261503419311181,-1.182871058247569,-1.281030848622023,-1.237677474296975,-1.179846467190382,-1.291471145386581,-1.26344117943139,-1.249142908704135,-1.190938680847351,-1.171647610185925,-1.271813933500688,-1.219646434863592,-1.197917471562407,-1.255397599564114,-1.289845067030875,-1.216376330222487,-1.194820264122286,-1.200655758734258,-1.183138739911283,-1.279076011910577,-1.174749721750987,-1.21589448638652,-1.322572394629069,-1.187719334958371,-1.274056404498023,-1.191575924776944,-1.300258599617963,-1.301749463000502,-1.309078462017613,-1.250836773926468,-1.202532007517115,-1.300731967540719,-1.189102802317893,-1.320232481968322,-1.299931267797351,-1.177046110840784,-1.326432594999996,-1.173869999059497,-1.222565787082954,-1.310139293155668,-1.256919694375656,-1.22438837671847,-1.321005705093337,-1.321915939344978,-1.324133911665609,-1.22082983750196,-1.234172174848751,-1.182643215875581,-1.230219302959223,-1.29182315999791,-1.237526463056339,-1.184363577933764,-1.31884350070047,-1.305132934922884,-1.291856553355024,-1.252203884224801,-1.31848044698336,-1.240941405238028,-1.209638188584542,-1.170773368996188,-1.246766111358463],[36.85941680590893,36.75623546282554,37.02411736493628,36.89562165471097,36.90622609557427,37.02018966892599,36.83438193342379,36.97594658037477,36.99434928255071,36.9455456852405,36.92524060780883,36.92369668343304,36.87473680698616,37.03559208882312,37.02451785955049,36.8161844845711,36.74713918335025,36.92386107863343,36.93682197509015,36.77960147894618,36.83825190195883,36.90983503270866,36.95335307833436,36.93867076448215,37.025461255652,37.00993733614241,36.85562197866145,36.92746671759586,36.87481010299985,36.7610935447645,36.95601170588329,37.00364332732514,36.80831918499282,36.98031147243541,37.00819278540603,36.9941829658591,36.9350848470988,36.94992771204706,36.99058843289723,36.82124268276814,37.02198687254687,36.79931287595784,36.79865415988901,36.92947456332583,37.03815958717521,36.81820481992397,36.97907545062224,36.84632559519856,36.7434728958308,36.80740501850039,36.78426732755113,36.77871465962686,36.88445424559442,36.89152443667224,36.81361891998075,36.79566875724733,36.75502653821774,37.02079750474277,36.76276699085945,36.80630009688436,37.02980609083321,36.8499370423878,36.83890929744066,36.89593661183331,36.9453039843053,36.95310050979701,36.95795815995437,36.8205337868478,36.81319671596537,36.82699063545602,36.91737200269628,36.75721363767997,36.85881639402917,36.75957734850847,36.92506675962043,36.88594589606907,36.77183153382609,36.80947893515936,36.89605144582606,36.95994207847674,36.93170272859803,36.7745077273416,36.96592999480642,36.91860471574979,36.97686957055351,36.80808748774597,36.87472578596763,36.86446873829443,36.89086495380192,36.84021575147149,36.97137164332293,36.92707849622291,36.87755699517832,36.99748119805749,36.91225929393013,36.78077446604453,36.94143091378617,36.77795507115816],{"icon":["home","building","home","star","star","building","tree","bed","building","cube","cube","home","tree","home","building","warehouse","columns","building","home","tree","home","tree","home","home","bed","home","cube","home","building","spa","warehouse","building","building","home","home","columns","bed","home","home","warehouse","home","home","building","bed","bed","home","bed","spa","home","cube","home","bed","home","bed","bed","star","cube","building","building","bed","home","home","home","home","tree","home","building","home","bed","building","columns","bed","building","building","bed","bed","bed","home","home","bed","tree","bed","home","home","building","star","home","bed","warehouse","columns","star","bed","spa","building","home","building","cube","home"],"markerColor":["red","blue","red","black","black","cadetblue","beige","lightred","cadetblue","purple","purple","red","beige","red","cadetblue","green","darkblue","blue","red","beige","darkred","beige","red","darkred","lightred","orange","purple","red","cadetblue","darkgreen","green","cadetblue","cadetblue","orange","red","darkblue","lightred","orange","orange","green","red","red","cadetblue","lightred","lightred","darkred","lightred","darkgreen","red","purple","red","lightred","darkred","lightred","lightred","black","purple","blue","blue","lightred","darkred","red","darkred","orange","beige","red","blue","darkred","lightred","cadetblue","darkblue","lightred","blue","blue","lightred","lightred","lightred","darkred","red","lightred","beige","lightred","darkred","orange","cadetblue","black","darkred","lightred","green","darkblue","black","lightred","darkgreen","blue","darkred","blue","purple","darkred"],"iconColor":"white","spin":false,"squareMarker":false,"iconRotate":0,"font":"monospace","prefix":"ion"},null,"Houses by Typology",{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 30,500/-<br><b>Available Amenities:<\/b> Gym, Borehole, Swimming Pool, WiFi, Playground<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 1,250,000/-<br><b>Available Amenities:<\/b> Borehole, Playground, WiFi, Perimeter Wall, CCTV<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 87,500/-<br><b>Available Amenities:<\/b> Borehole, Gym, Playground<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Penthouse<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 29,500,000/-<br><b>Available Amenities:<\/b> Borehole, Gym<br><img src='https://88nairobi.com/wp-content/uploads/2023/03/88-Nairobi-Lordship-PenthouseArtboard-3-1024x577.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Penthouse<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 14,000,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Borehole, Perimeter Wall, Playground, Parking<br><img src='https://88nairobi.com/wp-content/uploads/2023/03/88-Nairobi-Lordship-PenthouseArtboard-3-1024x577.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 12,500,000/-<br><b>Available Amenities:<\/b> CCTV, Parking, Gym, Borehole<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Cottage<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 46,500/-<br><b>Available Amenities:<\/b> CCTV, Swimming Pool, Borehole, Playground, Perimeter Wall<br><img src='https://a0.muscache.com/im/pictures/miso/Hosting-46759784/original/cd161fea-6798-4489-9ca8-c5a3b9b6b958.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 750,000/-<br><b>Available Amenities:<\/b> Parking, Playground<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 2,000,000/-<br><b>Available Amenities:<\/b> WiFi, Gym, CCTV, Swimming Pool, Borehole<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Studio<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 12,500/-<br><b>Available Amenities:<\/b> Gym, CCTV, Playground, Parking<br><img src='https://cf.bstatic.com/xdata/images/hotel/max1024x768/490723700.jpg?k=2d2b6d85bf110f67e8581af50156556d71c6e0df47e9f4f0394bcc30da6405e4&o=&hp=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Studio<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 45,500,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, Swimming Pool, Gym, Parking, WiFi<br><img src='https://cf.bstatic.com/xdata/images/hotel/max1024x768/490723700.jpg?k=2d2b6d85bf110f67e8581af50156556d71c6e0df47e9f4f0394bcc30da6405e4&o=&hp=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 44,000,000/-<br><b>Available Amenities:<\/b> Borehole, Swimming Pool<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Cottage<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 128,500/-<br><b>Available Amenities:<\/b> Borehole, Perimeter Wall, CCTV, Parking<br><img src='https://a0.muscache.com/im/pictures/miso/Hosting-46759784/original/cd161fea-6798-4489-9ca8-c5a3b9b6b958.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 1,950,000/-<br><b>Available Amenities:<\/b> Parking, Borehole, Perimeter Wall, CCTV, WiFi<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 47,500,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, CCTV, WiFi, Playground, Swimming Pool<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Townhouse<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 43,000,000/-<br><b>Available Amenities:<\/b> Playground, Swimming Pool<br><img src='https://propscout.co.ke/storage/properties/files/1233/thumbnails/uwjuj-4-bedroom-townhouse-for-sale-in-westlands.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Duplex<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 250,000/-<br><b>Available Amenities:<\/b> Parking, Borehole, Playground, Swimming Pool<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lJQcWb0ZQ1VHdd4RYNIUUHUBnVRPEVuHCw&s' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 55,000/-<br><b>Available Amenities:<\/b> WiFi, Gym, CCTV<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 41,000/-<br><b>Available Amenities:<\/b> Gym, CCTV<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Cottage<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 1,750,000/-<br><b>Available Amenities:<\/b> Swimming Pool, WiFi, Perimeter Wall, CCTV, Gym<br><img src='https://a0.muscache.com/im/pictures/miso/Hosting-46759784/original/cd161fea-6798-4489-9ca8-c5a3b9b6b958.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 1,600,000/-<br><b>Available Amenities:<\/b> Parking, Perimeter Wall, CCTV, Playground, Swimming Pool<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Cottage<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 400,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Playground, CCTV, Gym<br><img src='https://a0.muscache.com/im/pictures/miso/Hosting-46759784/original/cd161fea-6798-4489-9ca8-c5a3b9b6b958.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 2,000,000/-<br><b>Available Amenities:<\/b> Playground, Borehole<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 62,000/-<br><b>Available Amenities:<\/b> WiFi, Parking, Swimming Pool<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 90,000/-<br><b>Available Amenities:<\/b> CCTV, WiFi, Parking, Gym, Borehole<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bungalow<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 25,500,000/-<br><b>Available Amenities:<\/b> Playground, Parking, Borehole, Swimming Pool<br><img src='https://i0.wp.com/www.kenyaconstructionworks.co.ke/wp-content/uploads/2023/09/home-house-construction.jpg?resize=640%2C480&ssl=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Studio<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 112,000/-<br><b>Available Amenities:<\/b> Gym, Playground<br><img src='https://cf.bstatic.com/xdata/images/hotel/max1024x768/490723700.jpg?k=2d2b6d85bf110f67e8581af50156556d71c6e0df47e9f4f0394bcc30da6405e4&o=&hp=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 31,000/-<br><b>Available Amenities:<\/b> Playground, Swimming Pool, CCTV<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 23,000,000/-<br><b>Available Amenities:<\/b> WiFi, Playground, Swimming Pool, Perimeter Wall<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Villa<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 40,500,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, Playground, Swimming Pool, Gym<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjkxe5G5wd6p4oOmdvHg-g9C7SjxR5CyBTJA&s' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Townhouse<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 50,000,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, Playground<br><img src='https://propscout.co.ke/storage/properties/files/1233/thumbnails/uwjuj-4-bedroom-townhouse-for-sale-in-westlands.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 43,500,000/-<br><b>Available Amenities:<\/b> Playground, WiFi, CCTV<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 138,000/-<br><b>Available Amenities:<\/b> Borehole, Playground, CCTV, Perimeter Wall<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bungalow<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 19,000,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, CCTV, Borehole, WiFi, Playground<br><img src='https://i0.wp.com/www.kenyaconstructionworks.co.ke/wp-content/uploads/2023/09/home-house-construction.jpg?resize=640%2C480&ssl=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 400,000/-<br><b>Available Amenities:<\/b> Borehole, Playground, Perimeter Wall, Gym<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Duplex<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 18,000,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Borehole, Playground, Gym, Perimeter Wall<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lJQcWb0ZQ1VHdd4RYNIUUHUBnVRPEVuHCw&s' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 18,500,000/-<br><b>Available Amenities:<\/b> Borehole, Swimming Pool, Gym, Perimeter Wall, Playground<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bungalow<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 130,000/-<br><b>Available Amenities:<\/b> CCTV, Playground, Parking, WiFi<br><img src='https://i0.wp.com/www.kenyaconstructionworks.co.ke/wp-content/uploads/2023/09/home-house-construction.jpg?resize=640%2C480&ssl=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bungalow<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 1,000,000/-<br><b>Available Amenities:<\/b> Parking, Playground, Perimeter Wall<br><img src='https://i0.wp.com/www.kenyaconstructionworks.co.ke/wp-content/uploads/2023/09/home-house-construction.jpg?resize=640%2C480&ssl=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Townhouse<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 49,500/-<br><b>Available Amenities:<\/b> Borehole, WiFi, Gym, Swimming Pool, Parking<br><img src='https://propscout.co.ke/storage/properties/files/1233/thumbnails/uwjuj-4-bedroom-townhouse-for-sale-in-westlands.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 1,750,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Parking<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 9,000,000/-<br><b>Available Amenities:<\/b> Playground, WiFi, Swimming Pool<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 1,200,000/-<br><b>Available Amenities:<\/b> Borehole, Gym, Perimeter Wall, CCTV<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 1,450,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, CCTV<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 650,000/-<br><b>Available Amenities:<\/b> Gym, Swimming Pool<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 22,000/-<br><b>Available Amenities:<\/b> WiFi, Swimming Pool, Borehole, Gym<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 25,000,000/-<br><b>Available Amenities:<\/b> WiFi, Gym, Perimeter Wall, Parking, Playground<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Villa<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 1,250,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, CCTV, Gym<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjkxe5G5wd6p4oOmdvHg-g9C7SjxR5CyBTJA&s' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 31,500/-<br><b>Available Amenities:<\/b> Gym, Swimming Pool, Borehole<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Studio<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 17,500,000/-<br><b>Available Amenities:<\/b> Playground, Gym, Perimeter Wall, WiFi<br><img src='https://cf.bstatic.com/xdata/images/hotel/max1024x768/490723700.jpg?k=2d2b6d85bf110f67e8581af50156556d71c6e0df47e9f4f0394bcc30da6405e4&o=&hp=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 800,000/-<br><b>Available Amenities:<\/b> Playground, WiFi, Borehole, Perimeter Wall<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 48,500,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Borehole, Perimeter Wall, Playground, Gym<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 4,000,000/-<br><b>Available Amenities:<\/b> Borehole, Gym<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 96,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, Swimming Pool, CCTV<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 94,500/-<br><b>Available Amenities:<\/b> WiFi, Perimeter Wall, Gym, CCTV<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Penthouse<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 1,150,000/-<br><b>Available Amenities:<\/b> Borehole, WiFi<br><img src='https://88nairobi.com/wp-content/uploads/2023/03/88-Nairobi-Lordship-PenthouseArtboard-3-1024x577.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Studio<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 42,000,000/-<br><b>Available Amenities:<\/b> WiFi, Parking<br><img src='https://cf.bstatic.com/xdata/images/hotel/max1024x768/490723700.jpg?k=2d2b6d85bf110f67e8581af50156556d71c6e0df47e9f4f0394bcc30da6405e4&o=&hp=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 66,500/-<br><b>Available Amenities:<\/b> WiFi, Swimming Pool<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 550,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, Borehole, Playground<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 1,500,000/-<br><b>Available Amenities:<\/b> Playground, Gym<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 1,850,000/-<br><b>Available Amenities:<\/b> Parking, WiFi<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 16,500,000/-<br><b>Available Amenities:<\/b> Playground, Gym, WiFi<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 36,000,000/-<br><b>Available Amenities:<\/b> Gym, Perimeter Wall, Parking, Playground, Borehole<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bungalow<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 81,000/-<br><b>Available Amenities:<\/b> Gym, Perimeter Wall<br><img src='https://i0.wp.com/www.kenyaconstructionworks.co.ke/wp-content/uploads/2023/09/home-house-construction.jpg?resize=640%2C480&ssl=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Cottage<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 130,500/-<br><b>Available Amenities:<\/b> WiFi, Swimming Pool, Playground, Perimeter Wall, Borehole<br><img src='https://a0.muscache.com/im/pictures/miso/Hosting-46759784/original/cd161fea-6798-4489-9ca8-c5a3b9b6b958.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 850,000/-<br><b>Available Amenities:<\/b> Gym, Perimeter Wall<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 56,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, CCTV, Playground<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 24,500,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, CCTV, Parking, Borehole<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 750,000/-<br><b>Available Amenities:<\/b> WiFi, Swimming Pool, CCTV, Playground, Gym<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 200,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Borehole, Parking, CCTV<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Duplex<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 124,000/-<br><b>Available Amenities:<\/b> Parking, Gym, Swimming Pool, WiFi, Perimeter Wall<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lJQcWb0ZQ1VHdd4RYNIUUHUBnVRPEVuHCw&s' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 34,500/-<br><b>Available Amenities:<\/b> Perimeter Wall, WiFi, Parking<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 34,000,000/-<br><b>Available Amenities:<\/b> Playground, Swimming Pool, Perimeter Wall, WiFi, Parking<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 25,500,000/-<br><b>Available Amenities:<\/b> Playground, Borehole<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 88,500/-<br><b>Available Amenities:<\/b> CCTV, Playground, Parking, WiFi, Swimming Pool<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 67,500/-<br><b>Available Amenities:<\/b> Parking, CCTV<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 3<br><b>Rent or Price:<\/b> Kshs 21,500,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Playground, Borehole<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 42,000,000/-<br><b>Available Amenities:<\/b> Parking, CCTV, Borehole<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Maisonette<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 73,000/-<br><b>Available Amenities:<\/b> WiFi, Borehole, Swimming Pool<br><img src='https://marbleengineering.co.ke/wp-content/uploads/2024/12/maisonette-with-attic-1.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 22,000,000/-<br><b>Available Amenities:<\/b> Playground, Perimeter Wall<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Cottage<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 21,000,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Parking<br><img src='https://a0.muscache.com/im/pictures/miso/Hosting-46759784/original/cd161fea-6798-4489-9ca8-c5a3b9b6b958.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 46,500,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, Parking, CCTV, Gym, WiFi<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 4,500,000/-<br><b>Available Amenities:<\/b> WiFi, Parking, Borehole, Playground, CCTV<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bungalow<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 2,000,000/-<br><b>Available Amenities:<\/b> Swimming Pool, WiFi, Perimeter Wall, CCTV, Parking<br><img src='https://i0.wp.com/www.kenyaconstructionworks.co.ke/wp-content/uploads/2023/09/home-house-construction.jpg?resize=640%2C480&ssl=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Flat<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 42,500,000/-<br><b>Available Amenities:<\/b> Playground, Swimming Pool, CCTV, Gym<br><img src='https://propscout.co.ke/storage/properties/files/block-of-flat-for-sale-in-kasarani-awbw8.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Penthouse<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 1,200,000/-<br><b>Available Amenities:<\/b> Gym, CCTV, Perimeter Wall, Parking, Playground<br><img src='https://88nairobi.com/wp-content/uploads/2023/03/88-Nairobi-Lordship-PenthouseArtboard-3-1024x577.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 48,000,000/-<br><b>Available Amenities:<\/b> Gym, Parking, WiFi, Perimeter Wall, Borehole<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 2<br><b>Rent or Price:<\/b> Kshs 29,000,000/-<br><b>Available Amenities:<\/b> Playground, Gym, Borehole<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Townhouse<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 1,500,000/-<br><b>Available Amenities:<\/b> Gym, Playground, WiFi, Perimeter Wall<br><img src='https://propscout.co.ke/storage/properties/files/1233/thumbnails/uwjuj-4-bedroom-townhouse-for-sale-in-westlands.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Duplex<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 37,000,000/-<br><b>Available Amenities:<\/b> Playground, Parking, Borehole<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6lJQcWb0ZQ1VHdd4RYNIUUHUBnVRPEVuHCw&s' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Penthouse<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 6<br><b>Rent or Price:<\/b> Kshs 98,000/-<br><b>Available Amenities:<\/b> Perimeter Wall, Swimming Pool, Borehole, WiFi<br><img src='https://88nairobi.com/wp-content/uploads/2023/03/88-Nairobi-Lordship-PenthouseArtboard-3-1024x577.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Bedsitter<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 2,000,000/-<br><b>Available Amenities:<\/b> Parking, Perimeter Wall<br><img src='https://diamondcityvillas.com/wp-content/uploads/2023/11/IMG_7004.jpeg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Villa<br><b>House Availabe For:<\/b> For Rent<br><b>No. of Bedrooms:<\/b> 1<br><b>Rent or Price:<\/b> Kshs 90,000/-<br><b>Available Amenities:<\/b> Borehole, Swimming Pool, CCTV, Parking<br><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjkxe5G5wd6p4oOmdvHg-g9C7SjxR5CyBTJA&s' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 1,150,000/-<br><b>Available Amenities:<\/b> CCTV, Borehole, WiFi, Perimeter Wall<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 44,500,000/-<br><b>Available Amenities:<\/b> CCTV, Perimeter Wall<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Apartment<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 850,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Parking<br><img src='https://www.themoonapartments.com/wp-content/uploads/2024/06/Furnished-Apartment-Building-The-Moon-Serenity-Furnished-Apartments-Lymack-Suites-Fourways-Junction-Estate-Northern-Bypass-Road.webp' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Studio<br><b>House Availabe For:<\/b> For Sale<br><b>No. of Bedrooms:<\/b> 4<br><b>Rent or Price:<\/b> Kshs 11,500,000/-<br><b>Available Amenities:<\/b> Parking, Playground, Swimming Pool, Gym, Borehole<br><img src='https://cf.bstatic.com/xdata/images/hotel/max1024x768/490723700.jpg?k=2d2b6d85bf110f67e8581af50156556d71c6e0df47e9f4f0394bcc30da6405e4&o=&hp=1' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>","<b>House Typology:<\/b> Mansion<br><b>House Availabe For:<\/b> For Lease<br><b>No. of Bedrooms:<\/b> 5<br><b>Rent or Price:<\/b> Kshs 1,100,000/-<br><b>Available Amenities:<\/b> Swimming Pool, Gym, Perimeter Wall, Parking, Playground<br><img src='https://shiftersmovers.com/wp-content/uploads/2021/03/Expensive-Estates-In-Nairobi-1_02f6018e0_4720.jpg' width='200' style='margin-top:5px;'><br><a href='_site/posts/anada/index.html'>View More Details<\/a>"],null,null,null,["Maisonette in Kilimani","Apartment in Donholm","Maisonette in Rongai","Penthouse in South C","Penthouse in Lavington","Flat in Donholm","Cottage in Embakasi","Bedsitter in Westlands","Flat in Rongai","Studio in Kilimani","Studio in Kilimani","Maisonette in South C","Cottage in Gikambura","Maisonette in Eastleigh","Flat in Donholm","Townhouse in Embakasi","Duplex in Eastleigh","Apartment in Eastleigh","Maisonette in Donholm","Cottage in Lavington","Mansion in Lavington","Cottage in Lavington","Maisonette in Rongai","Mansion in Kilimani","Bedsitter in Karen","Bungalow in Eastleigh","Studio in Donholm","Maisonette in Eastleigh","Flat in Embakasi","Villa in Westlands","Townhouse in Gikambura","Flat in South C","Flat in Karen","Bungalow in Kilimani","Maisonette in Embakasi","Duplex in Kilimani","Bedsitter in Gikambura","Bungalow in Embakasi","Bungalow in Rongai","Townhouse in Gikambura","Maisonette in Lavington","Maisonette in South C","Flat in Rongai","Bedsitter in Donholm","Bedsitter in Embakasi","Mansion in Gikambura","Bedsitter in Eastleigh","Villa in South C","Maisonette in Karen","Studio in Eastleigh","Maisonette in Donholm","Bedsitter in Karen","Mansion in Lavington","Bedsitter in Rongai","Bedsitter in Kilimani","Penthouse in Lavington","Studio in Embakasi","Apartment in Gikambura","Apartment in Gikambura","Bedsitter in Embakasi","Mansion in Karen","Maisonette in Lavington","Mansion in Gikambura","Bungalow in Embakasi","Cottage in South C","Maisonette in Gikambura","Apartment in Karen","Mansion in Donholm","Bedsitter in Embakasi","Flat in Lavington","Duplex in Westlands","Bedsitter in South C","Apartment in Lavington","Apartment in Lavington","Bedsitter in Embakasi","Bedsitter in Kilimani","Bedsitter in Kilimani","Mansion in Lavington","Maisonette in Embakasi","Bedsitter in South C","Cottage in South C","Bedsitter in Karen","Mansion in Eastleigh","Bungalow in Karen","Flat in Donholm","Penthouse in Westlands","Mansion in Gikambura","Bedsitter in Rongai","Townhouse in South C","Duplex in Westlands","Penthouse in Westlands","Bedsitter in Lavington","Villa in Donholm","Apartment in Kilimani","Mansion in South C","Apartment in South C","Studio in South C","Mansion in Rongai"],{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["CartoDB","Satellite","OSM"],["Parcels by Status","Houses by Typology"],{"collapsed":false,"autoZIndex":true,"position":"topright"}]},{"method":"addLegend","args":[{"colors":["#00FF00","#0000FF","#FFA500"],"labels":["For Lease","For Rent","For Sale"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"bottomleft","type":"factor","title":"Parcel Status","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addLegend","args":[{"colors":["#66C2A5","#D3A47A","#E5937F","#9C9FC2","#C296C7","#DF9BB1","#B6CC6C","#D1D945","#FDD73D","#EDCA7D","#D4BEA0","#B3B3B3"],"labels":["Apartment","Bedsitter","Bungalow","Cottage","Duplex","Flat","Maisonette","Mansion","Penthouse","Studio","Townhouse","Villa"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"bottomright","type":"factor","title":"House Typology","extra":null,"layerId":null,"className":"info legend","group":null}]}],"limits":{"lat":[-1.328267431377834,-1.169301389578006],"lng":[36.73951529957129,37.04066634435004]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2025 Ben Amollo</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

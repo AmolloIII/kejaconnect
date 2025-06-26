@@ -1,0 +1,17 @@
+{
+  "hash": "32440703077a5e346b1881e099f5ca5b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Property for Sale: 3-Bedroom Maisonette in South C\"\n# owner: \"KejaConnect\"\ndate: \"2025-06-24\"\ncategories: [news, property, analysis]\nimage: \"image.jpg\"\n---\n\n\n\n**Owner:** KejaConnect  \n<!-- **Published:** June 24, 2025 -->\n\n\nDiscover this spacious and well-maintained **3-bedroom maisonette** located in the heart of South C, Nairobi. Ideal for families or investors, this home combines comfort, accessibility, and value in one of the city's most vibrant neighborhoods.\n\n### 📍 Property Details\n\n-   **Location:** South C, Nairobi\\\n-   **Typology:** Maisonette\\\n-   **Bedrooms:** 3\\\n-   **Bathrooms:** 2\\\n-   **Parking:** Yes (2 slots)\\\n-   **Status:** For Sale\\\n-   **Price:** KES 13,500,000\n\n### 🏡 Amenities\n\n-   Borehole water supply\\\n-   Secure perimeter wall\\\n-   High-speed internet ready\\\n-   Proximity to schools, malls, and hospitals\n\n### 📊 Value Insight (Interactive)\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# Example price trend (mock)\nplot(c(2019, 2020, 2021, 2022, 2023), c(10.5, 11.0, 11.7, 12.5, 13.5),\n     type = \"b\", col = \"blue\", lwd = 2,\n     xlab = \"Year\", ylab = \"Estimated Value (KES Millions)\",\n     main = \"Property Value Trend in South C\")\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

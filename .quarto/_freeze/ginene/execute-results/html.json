@@ -1,0 +1,15 @@
+{
+  "hash": "9aed469cb1148e5aaca06a91a11b4816",
+  "result": {
+    "engine": "knitr",
+    "markdown": "--- \ntitle: \"Palmer Penguins\"\nauthor: \"Cobblepot Analytics\"\nformat: html\n---\n\n::: {.cell}\n\n:::\n\n\n\n# {.sidebar}\n\n![](profile.jpg){width=\"80%\"}\n\n---\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n[Learn more](https://pypi.org/project/palmerpenguins/) about the \nPalmer Penguins dataset.\n\n---\n\n\n# Plots\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\n# Data\n\n\n\n::: {.cell}\n\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

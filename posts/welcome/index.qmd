@@ -1,0 +1,100 @@
+---
+title: "Property for Rent: Modern 2-Bedroom Apartment in Kilimani"
+author: "KejaConnect"
+date: "2025-06-21"
+categories: [property, for-rent, listing]
+image: "image.jpg"
+---
+
+:::{.columns}
+
+::: {.column width="55%"}
+
+Looking for a modern, stylish home in one of Nairobi’s most sought-after neighborhoods? This **2-bedroom apartment in Kilimani** offers convenience, comfort, and a vibrant urban lifestyle.
+
+### 📍 Property Details
+
+-   **Location:** Kilimani, Nairobi\
+-   **Typology:** Apartment\
+-   **Bedrooms:** 2\
+-   **Bathrooms:** 2\
+-   **Parking:** Yes (1 reserved slot)\
+-   **Status:** For Rent\
+-   **Rent Price:** KES 95,000/month
+
+### 🏢 Amenities
+
+-   Rooftop gym and lounge\
+-   Backup generator and lift\
+-   24/7 security with CCTV\
+-   Borehole and water tanks\
+-   Walking distance to Yaya Centre and major schools
+
+:::
+
+::: {.column width="45%"}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+library(leaflet)
+library(leaflet.extras)
+library(dplyr)
+library(sf)
+
+kejaz <- st_read("D:\\Rstuff\\Distill\\whuo\\whuo\\kejaz.shp", quiet = TRUE)
+
+# Subset to get 2-bedroom houses in Kilimani
+kilimani_2br <- kejaz %>%
+  filter(Nghbrhd == "Rongai", N_ofBdr == 3)
+
+# Define a custom house icon
+house_icon <- makeIcon(
+  iconUrl = "https://cdn-icons-png.flaticon.com/512/69/69524.png",  # sample house icon
+  iconWidth = 30, iconHeight = 30,
+  iconAnchorX = 15, iconAnchorY = 30
+)
+
+leaflet(data = kilimani_2br) %>%
+  # Add base layers
+  addProviderTiles(providers$CartoDB.Positron, group = "CartoDB") %>%
+  addProviderTiles(providers$Esri.WorldImagery, group = "Satellite") %>%
+  addProviderTiles(providers$OpenStreetMap, group = "OSM") %>%
+   # Add markers with color by house typology
+  addMarkers(
+    icon = house_icon,
+    label = ~paste("Typology:", HsTyplg)
+  ) %>%
+  
+  # Add layer control
+  addLayersControl(
+    baseGroups = c("CartoDB", "Satellite", "OSM"),
+    options = layersControlOptions(collapsed = FALSE)
+  )
+
+
+
+```
+
+
+:::
+
+### 📊 Rental Market Snapshot
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+# Mock monthly average rental trend
+months <- month.abb[1:6]
+rent_values <- c(92000, 94000, 95000, 96000, 95000, 95000)
+
+barplot(rent_values, names.arg = months,
+        col = "skyblue", main = "Kilimani 2BR Monthly Rent (2025)",
+        ylab = "KES", ylim = c(90000, 97000))
+```
+
+📞 Book a Viewing Don't miss out — reach out to us at KejaConnect to schedule a tour or inquire about similar listings.

@@ -1,0 +1,99 @@
+---
+title: "Land for Sale: Affordable Plot in Dandora, Nairobi"
+description: "Explore an affordable investment opportunity with this residential plot in Dandora, a growing suburb of Nairobi."
+author: "KejaConnect"
+date: 2025-06-24
+categories: [parcel, property, plot]
+format: html
+page-layout: article
+image: "dandoch.jpg"
+execute:
+  shiny: true
+---
+
+## Property Spotlight: Affordable Land for Sale in Dandora, Nairobi
+
+Looking for an entry-level investment or a strategic spot for building your future home? This **residential plot in Dandora** offers an accessible and affordable option within Nairobi’s urban core. Whether you're buying for your own use or to grow your portfolio, Dandora is quickly gaining popularity due to its location and improving infrastructure.
+
+---
+
+### 📍 Property Details
+
+- **Location:** Dandora, Nairobi  
+- **Typology:** Land  
+- **Size:** 40x80 ft (approx. 1/10 Acre)  
+- **Title:** Leasehold, ready for transfer  
+- **Status:** For Sale  
+- **Price:** KES 2,800,000
+
+---
+
+### 🛠️ Potential & Features
+
+- Ideal for **residential housing or rental units**  
+- **Graded access roads** and active neighborhood development  
+- **Mains water and electricity** available on-site  
+- Close to **schools**, **markets**, and **public transport**  
+- High demand for rental housing in the area
+
+---
+
+### 🗺️ Interactive Map: View Location
+
+```{r}
+#| label: dandora-map
+#| echo: false
+#| warning: false
+#| message: false
+
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%
+  setView(lng = 36.909, lat = -1.249, zoom = 16) %>%
+  addMarkers(
+    lng = 36.909,
+    lat = -1.249,
+    popup = "Affordable Plot for Sale in Dandora, Nairobi"
+  )
+```
+
+
+```{r}
+#| label: dandora-pricing
+#| echo: false
+#| warning: false
+
+library(ggplot2)
+
+dandora_prices <- data.frame(
+  year = 2015:2025,
+  price = c(1200000, 1400000, 1600000, 1800000, 2000000,
+            2200000, 2400000, 2550000, 2650000, 2750000, 2800000)
+)
+
+ggplot(dandora_prices, aes(x = year, y = price)) +
+  geom_line(color = "darkorange", size = 1.2) +
+  geom_point(color = "black") +
+  labs(
+    title = "Land Price Growth in Dandora (KES)",
+    x = "Year", y = "Average Price"
+  ) +
+  theme_minimal()
+
+```
+
+
+---
+
+### 📞 Schedule a Site Visit
+
+**Ready to make a move or just want to see the plot?**  
+Contact us to arrange a personalized site visit.
+
+**Contact Us:**  
+📧 **Email:** info@kejaconnect.co.ke  
+📱 **Phone:** +254 721 646 495  
+🌐 **Website:** [Visit Website](https://www.kejaconnect.co.ke)
+
+---

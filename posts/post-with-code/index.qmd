@@ -1,0 +1,44 @@
+---
+title: "Property for Sale: 3-Bedroom Maisonette in South C"
+# owner: "KejaConnect"
+date: "2025-06-24"
+categories: [news, property, analysis]
+image: "image.jpg"
+---
+
+**Owner:** KejaConnect  
+<!-- **Published:** June 24, 2025 -->
+
+
+Discover this spacious and well-maintained **3-bedroom maisonette** located in the heart of South C, Nairobi. Ideal for families or investors, this home combines comfort, accessibility, and value in one of the city's most vibrant neighborhoods.
+
+### 📍 Property Details
+
+-   **Location:** South C, Nairobi\
+-   **Typology:** Maisonette\
+-   **Bedrooms:** 3\
+-   **Bathrooms:** 2\
+-   **Parking:** Yes (2 slots)\
+-   **Status:** For Sale\
+-   **Price:** KES 13,500,000
+
+### 🏡 Amenities
+
+-   Borehole water supply\
+-   Secure perimeter wall\
+-   High-speed internet ready\
+-   Proximity to schools, malls, and hospitals
+
+### 📊 Value Insight (Interactive)
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+# Example price trend (mock)
+plot(c(2019, 2020, 2021, 2022, 2023), c(10.5, 11.0, 11.7, 12.5, 13.5),
+     type = "b", col = "blue", lwd = 2,
+     xlab = "Year", ylab = "Estimated Value (KES Millions)",
+     main = "Property Value Trend in South C")
+```
+📞 Book a Viewing Don't miss out — reach out to us at KejaConnect to schedule a tour or inquire about similar listings.

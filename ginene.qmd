@@ -1,0 +1,43 @@
+--- 
+title: "Palmer Penguins"
+author: "Cobblepot Analytics"
+format: html
+---
+
+```{r}
+
+```
+
+# {.sidebar}
+
+![](profile.jpg){width="80%"}
+---
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+[Learn more](https://pypi.org/project/palmerpenguins/) about the 
+Palmer Penguins dataset.
+
+---
+
+# Plots
+
+```{r}
+
+``` 
+
+```{r}
+
+``` 
+
+# Data
+
+```{r} 
+
+``` 

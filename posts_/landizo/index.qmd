@@ -1,0 +1,104 @@
+---
+title: "Land for Sale: Prime Plot in Lang’ata, Nairobi"
+description: "Discover this rare opportunity to own land in the rapidly growing Lang’ata area of Nairobi—ideal for residential or mixed-use development."
+author: "KejaConnect"
+date: 2025-06-24
+categories: [news, property, analysis]
+format: html
+page-layout: article
+image: "land-langata.jpg"
+execute:
+  shiny: true
+
+---
+
+## Property Spotlight: Prime Land for Sale in Lang’ata, Nairobi
+
+Looking to invest in Nairobi's thriving real estate market? This **prime plot in Lang’ata** offers a perfect opportunity—whether you’re planning a family home, a gated community, or a mixed-use project. Located in one of Nairobi’s most accessible and fast-developing suburbs, this land is a smart buy for both developers and individual investors.
+
+---
+
+### 📍 Property Details
+
+- **Location:** Lang’ata, Nairobi  
+- **Typology:** Land  
+- **Size:** 1/8 Acre (approx. 50x100 ft)  
+- **Title:** Freehold, Ready for transfer  
+- **Status:** For Sale  
+- **Price:** KES 7,200,000
+
+---
+
+### 🛠️ Potential & Features
+
+- Ideal for **residential or townhouse development**  
+- **Red soil** and flat terrain—minimal site prep needed  
+- **Serviced with water and electricity**  
+- **Mature neighborhood** with schools, shops, and healthcare nearby  
+- Access via **all-weather road**  
+- **Secure and quiet** area with growing demand
+
+---
+
+### 🗺️ Interactive Map: View Location
+
+```{r}
+#| label: langata-map
+#| echo: false
+#| warning: false
+#| message: false
+
+library(leaflet)
+
+leaflet() %>%
+  addTiles() %>%
+  setView(lng = 36.741, lat = -1.3556, zoom = 15) %>%
+  addMarkers(
+    lng = 36.741,
+    lat = -1.3556,
+    popup = "Prime 1/8 Acre Plot for Sale in Lang’ata, Nairobi"
+  )
+```
+
+```{r}
+#| label: price-insight
+#| echo: false
+#| warning: false
+
+library(ggplot2)
+
+# Simulate sample pricing data
+prices <- data.frame(
+  year = 2015:2025,
+  price = c(4300000, 4700000, 5100000, 5400000, 5800000,
+            6100000, 6400000, 6750000, 7000000, 7200000, 7400000)
+)
+
+ggplot(prices, aes(x = year, y = price)) +
+  geom_line(color = "darkgreen", size = 1.2) +
+  geom_point(color = "black") +
+  labs(
+    title = "Historical Land Price Trends in Lang’ata (KES)",
+    x = "Year", y = "Average Price"
+  ) +
+  theme_minimal()
+
+```
+
+
+
+
+---
+
+### 📞 Schedule a Site Visit
+
+**Ready to make a move or just want to see the plot?**  
+Contact us to arrange a personalized site visit.
+
+**Contact Us:**  
+📧 **Email:** info@kejaconnect.co.ke  
+📱 **Phone:** +254 721 646 495  
+🌐 **Website:** [Visit Website](https://www.kejaconnect.co.ke)
+
+---
+

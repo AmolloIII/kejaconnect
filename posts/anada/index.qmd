@@ -1,0 +1,54 @@
+---
+title: "Property for Sale: 3-Bedroom Maisonette in Donholm"
+description: "Explore this spacious and well-located 3-bedroom maisonette for sale in Nairobi’s Donholm neighborhood."
+author: "KejaConnect"
+date: 2025-06-24
+categories: [news, property, analysis]
+format: html
+page-layout: article
+image: "image.jpg"
+---
+
+## Property Spotlight: 3-Bedroom Maisonette for Sale in Donholm
+
+Looking for a home that checks all the right boxes—location, space, and security? This **3-bedroom maisonette in South C, Nairobi**, might be exactly what you need. Whether you're buying for your family or seeking a solid real estate investment, this property offers the perfect mix of convenience and value.
+
+---
+
+### 📍 Property Details
+
+- **Location:** South C, Nairobi  
+- **Typology:** Maisonette  
+- **Bedrooms:** 3  
+- **Bathrooms:** 2  
+- **Parking:** 2 dedicated slots  
+- **Status:** For Sale  
+- **Price:** KES 13,500,000
+
+---
+
+### 🏡 Amenities
+
+- Reliable **borehole water supply**  
+- **Secure perimeter wall** for peace of mind  
+- **High-speed internet** connectivity  
+- Walking distance to **schools**, **shopping malls**, and **hospitals**
+
+---
+
+### 📊 Value Insight (Interactive)
+
+Explore the interactive insights below to view current pricing trends, rental yields, and growth forecasts for South C.
+
+```{r}
+#| label: value-insight
+#| echo: false
+#| warning: false
+
+# Placeholder: Embed your interactive chart or dashboard code here
+# Example using a leaflet map, plotly chart, or other visual
+# For now, let's simulate with a placeholder plot
+
+plot(cars)
+```
+

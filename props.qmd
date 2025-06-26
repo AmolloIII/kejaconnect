@@ -1,0 +1,10 @@
+---
+title: "Interactive Land and Houses Map"
+format: html
+---
+
+## Explore the Property App
+
+<iframe src="https://amolloz.shinyapps.io/prop/"
+        width="100%" height="700px" style="border: none;">
+</iframe>

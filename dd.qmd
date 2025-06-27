@@ -1,0 +1,221 @@
+---
+title: "Available Properties"
+format: 
+  dashboard:
+    theme: cosmo
+    orientation: rows
+    sidebar: open
+    reader-mode: false
+runtime: shiny
+---
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+library(shiny)
+library(leaflet)
+library(DT)
+library(dplyr)
+library(sf)
+
+# Load datasets (adjust path as needed)
+parcels <- st_read("D:/Rstuff/Distill/whuo/whuo/parcels.shp", quiet = TRUE)
+kejaz <- st_read("D:/Rstuff/Distill/whuo/whuo/kejaz.shp", quiet = TRUE)
+
+# Harmonize for filtering
+kejaz$Status <- kejaz$For
+kejaz$Prc.Rnt <- as.numeric(kejaz$Prc.Rnt)
+kejaz$location <- kejaz$Nghbrhd
+
+# Assign random status to parcels
+set.seed(123)  # for reproducibility
+parcels$Status <- sample(c("For Sale", "For Rent"), nrow(parcels), replace = TRUE)
+parcels$Price <- sample(890000:55000000, nrow(parcels), replace = TRUE)
+parcels$Size <- parcels$AREA_HA
+```
+
+
+## Filters
+
+###  {.sidebar}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+radioButtons("dataset", "Select Dataset:",
+             choices = c("Houses" = "kejaz", "Parcels" = "parcels"),
+             selected = "kejaz")
+
+uiOutput("dynamic_filters")
+
+```
+
+
+### Interactive Map
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+renderLeaflet({
+  filtered_data <- reactive({
+  if (input$dataset == "kejaz") {
+    data <- kejaz
+    if (!is.null(input$typology)) {
+      data <- data %>% filter(HsTyplg %in% input$typology)
+    }
+    if (!is.null(input$status)) {
+      data <- data %>% filter(For %in% input$status)
+    }
+    if (!is.null(input$location)) {
+      data <- data %>% filter(Nghbrhd %in% input$location)
+    }
+    if (!is.null(input$price_range)) {
+      data <- data %>% filter(Prc.Rnt >= input$price_range[1], Prc.Rnt <= input$price_range[2])
+    }
+  } else {
+    data <- parcels
+    if (!is.null(input$status_p)) {
+      data <- data %>% filter(Status %in% input$status_p)
+    }
+    if (!is.null(input$size_range)) {
+      data <- data %>% filter(AREA_HA >= input$size_range[1], AREA_HA <= input$size_range[2])
+    }
+  }
+  data
+})
+
+
+output$dynamic_filters <- renderUI({
+  if (input$dataset == "kejaz") {
+    tagList(
+      selectInput("typology", "Select Typology:",
+                  choices = unique(kejaz$HsTyplg), multiple = TRUE),
+      selectInput("status", "Status:",
+                  choices = unique(kejaz$For), multiple = TRUE),
+      selectInput("location", "Location:",
+                  choices = unique(kejaz$Nghbrhd), multiple = TRUE),
+      sliderInput("price_range", "Price/Rent Range:",
+                  min = min(kejaz$Prc.Rnt, na.rm = TRUE),
+                  max = max(kejaz$Prc.Rnt, na.rm = TRUE),
+                  value = c(min(kejaz$Prc.Rnt, na.rm = TRUE), max(kejaz$Prc.Rnt, na.rm = TRUE)))
+    )
+  } else {
+    tagList(
+      selectInput("status_p", "Status:",
+                  choices = unique(parcels$Status), multiple = TRUE),
+      sliderInput("size_range", "Parcel Size (Ha):",
+                  min = min(parcels$AREA_HA, na.rm = TRUE),
+                  max = max(parcels$AREA_HA, na.rm = TRUE),
+                  value = c(min(parcels$AREA_HA, na.rm = TRUE), max(parcels$AREA_HA, na.rm = TRUE)))
+    )
+  }
+})
+  data <- filtered_data()
+  if (input$dataset == "kejaz") {
+    leaflet(data) %>%
+      addTiles() %>%
+      addCircleMarkers(
+        radius = 6,
+        stroke = FALSE,
+        fillColor = "blue",
+        fillOpacity = 0.7,
+        popup = ~paste0(
+          "<strong>Typology:</strong> ", HsTyplg, "<br>",
+          "<strong>Status:</strong> ", For, "<br>",
+          "<strong>Price/Rent:</strong> ", Prc.Rnt, "<br>",
+          "<strong>Location:</strong> ", Nghbrhd
+        )
+      )
+  } else {
+    leaflet(data) %>%
+      addTiles() %>%
+      addPolygons(
+        fillColor = "green",
+        color = "#444444",
+        weight = 1,
+        fillOpacity = 0.4,
+        popup = ~paste0(
+          "<strong>Parcel No:</strong> ", PARCEL_NO, "<br>",
+          "<strong>Area (Ha):</strong> ", AREA_HA
+        )
+      )
+  }
+})
+
+```
+
+## Data Table
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+renderDT({
+  filtered_data <- reactive({
+  if (input$dataset == "kejaz") {
+    data <- kejaz
+    if (!is.null(input$typology)) {
+      data <- data %>% filter(HsTyplg %in% input$typology)
+    }
+    if (!is.null(input$status)) {
+      data <- data %>% filter(For %in% input$status)
+    }
+    if (!is.null(input$location)) {
+      data <- data %>% filter(Nghbrhd %in% input$location)
+    }
+    if (!is.null(input$price_range)) {
+      data <- data %>% filter(Prc.Rnt >= input$price_range[1], Prc.Rnt <= input$price_range[2])
+    }
+  } else {
+    data <- parcels
+    if (!is.null(input$status_p)) {
+      data <- data %>% filter(Status %in% input$status_p)
+    }
+    if (!is.null(input$size_range)) {
+      data <- data %>% filter(AREA_HA >= input$size_range[1], AREA_HA <= input$size_range[2])
+    }
+  }
+  data
+})
+
+
+output$dynamic_filters <- renderUI({
+  if (input$dataset == "kejaz") {
+    tagList(
+      selectInput("typology", "Select Typology:",
+                  choices = unique(kejaz$HsTyplg), multiple = TRUE),
+      selectInput("status", "Status:",
+                  choices = unique(kejaz$For), multiple = TRUE),
+      selectInput("location", "Location:",
+                  choices = unique(kejaz$Nghbrhd), multiple = TRUE),
+      sliderInput("price_range", "Price/Rent Range:",
+                  min = min(kejaz$Prc.Rnt, na.rm = TRUE),
+                  max = max(kejaz$Prc.Rnt, na.rm = TRUE),
+                  value = c(min(kejaz$Prc.Rnt, na.rm = TRUE), max(kejaz$Prc.Rnt, na.rm = TRUE)))
+    )
+  } else {
+    tagList(
+      selectInput("status_p", "Status:",
+                  choices = unique(parcels$Status), multiple = TRUE),
+      sliderInput("size_range", "Parcel Size (Ha):",
+                  min = min(parcels$AREA_HA, na.rm = TRUE),
+                  max = max(parcels$AREA_HA, na.rm = TRUE),
+                  value = c(min(parcels$AREA_HA, na.rm = TRUE), max(parcels$AREA_HA, na.rm = TRUE)))
+    )
+  }
+})
+
+  data <- filtered_data()
+  if (input$dataset == "kejaz") {
+    datatable(st_drop_geometry(data)[, c("HsTyplg", "For", "Nghbrhd", "Prc.Rnt", "AdddAmn")])
+  } else {
+    datatable(st_drop_geometry(data)[, c("PARCEL_NO", "AREA_HA", "AUTH_DATE", "F_R")])
+  }
+})
+
+```

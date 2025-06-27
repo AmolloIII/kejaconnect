@@ -21,3 +21,11 @@ format:
   html:
     theme: cosmo
     toc: true
+    
+sidebar:
+    - id: blog
+      collapse-level: 2
+      contents:
+        - blog.qmd
+        - section: "2025"
+          contents: posts/*

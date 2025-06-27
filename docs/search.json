@@ -42,13 +42,6 @@
     "text": "Learn more about the Palmer Penguins dataset.\n\n\n\nPlots\n\n\nData"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this blog"
-  },
-  {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Explore Properties",
@@ -61,6 +54,13 @@
     "title": "Explore Properties",
     "section": "",
     "text": "Are you searching for your next plot, rental, or commercial space? KejaConnect makes it easy to explore verified properties with confidence. Our intuitive platform empowers you to find exactly what you need using interactive maps and smart tables that allow you to filter listings based on your preferences — whether it’s the type of property (land, house, apartment, or commercial), the location, your budget, or whether the property is for sale, rent, or lease."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
   },
   {
     "objectID": "index.html",
